@@ -8,7 +8,7 @@
 #define DB_BUF_INIT(type, name)                 \
     static unsigned _db_curt_##name = 0;        \
     static unsigned _db_last_##name = 1;        \
-    static type _db_var_##name[2]
+    static type _db_var_##name[2] = {0, 0}
 
 #define DB_BUF_SET(name, value)                 \
 do {                                            \
